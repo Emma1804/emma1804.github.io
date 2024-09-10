@@ -1,0 +1,109 @@
+body {
+    font-family: Helvetica, Arial, Sans-serif;
+    margin: 0px;
+    font-size: 1.25vw;
+}   
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", sans-serif; 
+    /* If the name of the font is 2 words, use double quotes to link both words */
+    width: 15%;
+    text-shadow: 
+    0.5px 0.5px 0px black, /* bottom-right shadow */
+    -0.5px 0.5px 0px black, /* bottom-left shadow */
+    0.5px -0.5px 0px black, /* top-right shadow */
+    -0.5px -0.5px 0px black; /* top left shadow */
+}
+
+ul {
+    margin: 0%;
+}
+
+body > header  {
+    background-color: orange;
+    color: white;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li {
+    padding: 8px;
+}
+
+body > header > nav > ul {
+    list-style: none; 
+    text-decoration: none; 
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border: 0.5px solid white;
+    border-radius: 10%;
+}
+
+body > main article {
+    width: 80%;
+    margin: auto;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div {
+    width: 80%;
+}
+
+.profilelink {
+    text-decoration: none;
+}
+ 
+.filter {
+    text-decoration: none;
+}
+
+form {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+body > footer {
+    background-color: orange;
+    display: flex;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+}
+
+section > nav > ul {
+    margin: 0px;
+}
