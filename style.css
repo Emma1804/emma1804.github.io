@@ -51,6 +51,7 @@ ul {
 
 #nav-ul1 {
     display: flex;
+    justify-items: auto;
 }
 
 #nav-ul1 > li {
@@ -126,11 +127,6 @@ footer {
     list-style: none;
     margin-top: 7%;
     text-align: justify;
-}
-
-#footer_ul {
-    width: 100%;
-    text-align: right;
 }
 
 #footer-ul > div > li {
