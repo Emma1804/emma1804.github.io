@@ -19,15 +19,18 @@ body {
 
 ul {
     margin: 0%;
+    list-style: none;
+    text-decoration: none;
 }
 
-body > header  {
+#main-header  {
     background-color: #fc616f;
     color: white;
     display: flex;
-    height: 8vh;
+    height: 12vh;
     align-items: center;
     justify-content: space-around;
+    grid-area: header1;
 }
 
 #nav-ul {
@@ -38,11 +41,6 @@ body > header  {
     padding: 8px;
 }
 
-body > header > nav > ul {
-    list-style: none; 
-    text-decoration: none; 
-}
-
 .navbutton {
     color: white;
     text-decoration: none;
@@ -51,24 +49,59 @@ body > header > nav > ul {
     border-radius: 10%;
 }
 
-body > main article {
-    width: 80%;
-    margin: auto;
+#nav-ul1 {
+    display: flex;
 }
 
-#main-content {
+#nav-ul1 > li {
+    padding: 8px;
+}
+
+#secondary-header {
+    background-color: #fed84f;
+    height: 6vh;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: header2;
+}
+
+.navbutton1 {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px;
+    border: 1.0px solid white;
+    border-radius: 10%;
     justify-content: space-around;
 }
 
-#main-content > div {
-    width: 80%;
+#grid-container > section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.profilelink {
-    text-decoration: none;
+#main1 {
+    grid-area: main1;
+}
+
+#main2 {
+    grid-area: main2;
+}
+
+#main3 {
+    grid-area: main3;
+}
+
+#main4 {
+    grid-area: main4;
 }
  
+#filter {
+    grid-area: filter;
+}
+
 .filter {
     text-decoration: none;
 }
@@ -77,18 +110,27 @@ form {
     text-align: center;
 }
 
-h2 {
+h3 {
     text-align: center;
 }
 
-body > footer {
+footer {
     background-color: #fc616f;
     display: flex;
+    margin: 0px;
+    grid-area: footer;
 }
 
 #footer-ul {
     display: flex;
     list-style: none;
+    margin-top: 7%;
+    text-align: justify;
+}
+
+#footer_ul {
+    width: 100%;
+    text-align: right;
 }
 
 #footer-ul > div > li {
@@ -100,10 +142,45 @@ body > footer {
     text-decoration: none;
 }
 
-img {
-    border-radius: 50%;
+footer > h2 {
+    font-family: "Fredoka One", sans-serif; 
+    color: white;
+    padding: 8px;
+    text-shadow: 
+    0.5px 0.5px 0px black, /* bottom-right shadow */
+    -0.5px 0.5px 0px black, /* bottom-left shadow */
+    0.5px -0.5px 0px black, /* top-right shadow */
+    -0.5px -0.5px 0px black; /* top left shadow */
+}
+
+#star-pic1 {
+    align-items: flex-start;
+    max-width: 150%;
+    max-height: 150%;
+}
+
+#star-pic2 {
+    width: fit-content;
+    height: fit-content;
 }
 
 section > nav > ul {
     margin: 0px;
+}
+
+#form {
+    grid-area: form;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 15% 42.5% 42.5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header1 header1 header1"
+    "header2 header2 header2"
+    "filter main1 main2"
+    ". main3 main4"
+    "form form form"
+    "footer footer footer";
 }
