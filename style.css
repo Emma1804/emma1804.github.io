@@ -23,6 +23,14 @@ ul {
     text-decoration: none;
 }
 
+h2 > a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 15%;
+}
+
 #main-header  {
     background-color: #fc616f;
     color: white;
